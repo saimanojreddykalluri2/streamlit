@@ -1,3 +1,11 @@
+import subprocess
+
+def install(name):
+    subprocess.call([sys.executable, '-m', 'pip', 'install', name])
+install("streamlit")
+install("joblib")
+install("numpy")
+
 import streamlit as st
 import joblib
 import numpy as np
